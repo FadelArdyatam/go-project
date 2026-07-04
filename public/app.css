@@ -1,0 +1,103 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+}
+
+.container.wide {
+    max-width: 720px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+input[type=text], input[type=email], input[type=password], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button, .btn {
+    display: inline-block;
+    margin-top: 1.25rem;
+    padding: 0.5rem 1rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font: inherit;
+    text-decoration: none;
+}
+
+.btn-danger {
+    background: #dc2626;
+}
+
+.error {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+}
+
+.muted {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.note {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.note h3 {
+    margin: 0 0 0.5rem;
+}
+
+.note-actions {
+    margin-top: 0.75rem;
+}
+
+.note-actions form {
+    display: inline;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}

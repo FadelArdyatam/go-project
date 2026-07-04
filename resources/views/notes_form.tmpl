@@ -1,0 +1,28 @@
+{{ define "notes_form.tmpl" }}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Note</title>
+    <link rel="stylesheet" href="/public/app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Note</h1>
+
+        <form method="POST" action="{{ .action }}">
+            <label>Judul</label>
+            <input type="text" name="title" value="{{ .note.Title }}" required>
+
+            <label>Isi</label>
+            <textarea name="body" required>{{ .note.Body }}</textarea>
+
+            <button type="submit">Simpan</button>
+        </form>
+
+        <p class="muted"><a href="/notes">Kembali ke daftar notes</a></p>
+    </div>
+</body>
+</html>
+{{ end }}
